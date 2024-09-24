@@ -1,0 +1,562 @@
+{
+  "rate_response": {
+    "rates": [
+      {
+        "rate_id": "se-20997413",
+        "rate_type": "shipment",
+        "carrier_id": "se-836173",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 8.66
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "requested_comparison_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "rate_details": [
+          {
+            "rate_detail_type": "shipping",
+            "carrier_description": "shipping",
+            "carrier_billing_code": null,
+            "carrier_memo": null,
+            "amount": {
+              "currency": "usd",
+              "amount": 8.66
+            },
+            "billing_source": "Carrier"
+          }
+        ],
+        "zone": 0,
+        "package_type": "package",
+        "delivery_days": 3,
+        "guaranteed_service": false,
+        "estimated_delivery_date": "2024-09-27T00:00:00Z",
+        "carrier_delivery_days": "1-3",
+        "ship_date": "2024-09-24T00:00:00Z",
+        "negotiated_rate": false,
+        "service_type": "USPS Priority Mail",
+        "service_code": "usps_priority_mail",
+        "trackable": true,
+        "carrier_code": "usps",
+        "carrier_nickname": null,
+        "carrier_friendly_name": "USPS",
+        "validation_status": "invalid",
+        "warning_messages": [],
+        "error_messages": [
+          "No customs items have been created for international order.",
+          "Customs contents type not set for international order.",
+          "Non-delivery option not set for international order."
+        ]
+      },
+      {
+        "rate_id": "se-20997414",
+        "rate_type": "shipment",
+        "carrier_id": "se-836173",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 15.19
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "requested_comparison_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "rate_details": [
+          {
+            "rate_detail_type": "shipping",
+            "carrier_description": "shipping",
+            "carrier_billing_code": null,
+            "carrier_memo": null,
+            "amount": {
+              "currency": "usd",
+              "amount": 15.19
+            },
+            "billing_source": "Carrier"
+          }
+        ],
+        "zone": 0,
+        "package_type": "medium_flat_rate_box",
+        "delivery_days": 3,
+        "guaranteed_service": false,
+        "estimated_delivery_date": "2024-09-27T00:00:00Z",
+        "carrier_delivery_days": "1-3",
+        "ship_date": "2024-09-24T00:00:00Z",
+        "negotiated_rate": false,
+        "service_type": "USPS Priority Mail",
+        "service_code": "usps_priority_mail",
+        "trackable": true,
+        "carrier_code": "usps",
+        "carrier_nickname": null,
+        "carrier_friendly_name": "USPS",
+        "validation_status": "invalid",
+        "warning_messages": [],
+        "error_messages": [
+          "No customs items have been created for international order.",
+          "Customs contents type not set for international order.",
+          "Non-delivery option not set for international order."
+        ]
+      },
+      {
+        "rate_id": "se-20997415",
+        "rate_type": "shipment",
+        "carrier_id": "se-836173",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 8.71
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "requested_comparison_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "rate_details": [
+          {
+            "rate_detail_type": "shipping",
+            "carrier_description": "shipping",
+            "carrier_billing_code": null,
+            "carrier_memo": null,
+            "amount": {
+              "currency": "usd",
+              "amount": 8.71
+            },
+            "billing_source": "Carrier"
+          }
+        ],
+        "zone": 0,
+        "package_type": "small_flat_rate_box",
+        "delivery_days": 3,
+        "guaranteed_service": false,
+        "estimated_delivery_date": "2024-09-27T00:00:00Z",
+        "carrier_delivery_days": "1-3",
+        "ship_date": "2024-09-24T00:00:00Z",
+        "negotiated_rate": false,
+        "service_type": "USPS Priority Mail",
+        "service_code": "usps_priority_mail",
+        "trackable": true,
+        "carrier_code": "usps",
+        "carrier_nickname": null,
+        "carrier_friendly_name": "USPS",
+        "validation_status": "invalid",
+        "warning_messages": [],
+        "error_messages": [
+          "No customs items have been created for international order.",
+          "Customs contents type not set for international order.",
+          "Non-delivery option not set for international order."
+        ]
+      },
+      {
+        "rate_id": "se-20997416",
+        "rate_type": "shipment",
+        "carrier_id": "se-836173",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 20.69
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "requested_comparison_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "rate_details": [
+          {
+            "rate_detail_type": "shipping",
+            "carrier_description": "shipping",
+            "carrier_billing_code": null,
+            "carrier_memo": null,
+            "amount": {
+              "currency": "usd",
+              "amount": 20.69
+            },
+            "billing_source": "Carrier"
+          }
+        ],
+        "zone": 0,
+        "package_type": "large_flat_rate_box",
+        "delivery_days": 3,
+        "guaranteed_service": false,
+        "estimated_delivery_date": "2024-09-27T00:00:00Z",
+        "carrier_delivery_days": "1-3",
+        "ship_date": "2024-09-24T00:00:00Z",
+        "negotiated_rate": false,
+        "service_type": "USPS Priority Mail",
+        "service_code": "usps_priority_mail",
+        "trackable": true,
+        "carrier_code": "usps",
+        "carrier_nickname": null,
+        "carrier_friendly_name": "USPS",
+        "validation_status": "invalid",
+        "warning_messages": [],
+        "error_messages": [
+          "No customs items have been created for international order.",
+          "Customs contents type not set for international order.",
+          "Non-delivery option not set for international order."
+        ]
+      },
+      {
+        "rate_id": "se-20997417",
+        "rate_type": "shipment",
+        "carrier_id": "se-836173",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 8.18
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "requested_comparison_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "rate_details": [
+          {
+            "rate_detail_type": "shipping",
+            "carrier_description": "shipping",
+            "carrier_billing_code": null,
+            "carrier_memo": null,
+            "amount": {
+              "currency": "usd",
+              "amount": 8.18
+            },
+            "billing_source": "Carrier"
+          }
+        ],
+        "zone": 0,
+        "package_type": "flat_rate_envelope",
+        "delivery_days": 3,
+        "guaranteed_service": false,
+        "estimated_delivery_date": "2024-09-27T00:00:00Z",
+        "carrier_delivery_days": "1-3",
+        "ship_date": "2024-09-24T00:00:00Z",
+        "negotiated_rate": false,
+        "service_type": "USPS Priority Mail",
+        "service_code": "usps_priority_mail",
+        "trackable": true,
+        "carrier_code": "usps",
+        "carrier_nickname": null,
+        "carrier_friendly_name": "USPS",
+        "validation_status": "invalid",
+        "warning_messages": [
+          "Heads up! You've included custom dimensions for a package type with a standardized size. For more accurate rates, consider removing the dimensions for this shipment."
+        ],
+        "error_messages": [
+          "No customs items have been created for international order.",
+          "Customs contents type not set for international order.",
+          "Non-delivery option not set for international order."
+        ]
+      },
+      {
+        "rate_id": "se-20997418",
+        "rate_type": "shipment",
+        "carrier_id": "se-836173",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 8.95
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "requested_comparison_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "rate_details": [
+          {
+            "rate_detail_type": "shipping",
+            "carrier_description": "shipping",
+            "carrier_billing_code": null,
+            "carrier_memo": null,
+            "amount": {
+              "currency": "usd",
+              "amount": 8.95
+            },
+            "billing_source": "Carrier"
+          }
+        ],
+        "zone": 0,
+        "package_type": "flat_rate_padded_envelope",
+        "delivery_days": 3,
+        "guaranteed_service": false,
+        "estimated_delivery_date": "2024-09-27T00:00:00Z",
+        "carrier_delivery_days": "1-3",
+        "ship_date": "2024-09-24T00:00:00Z",
+        "negotiated_rate": false,
+        "service_type": "USPS Priority Mail",
+        "service_code": "usps_priority_mail",
+        "trackable": true,
+        "carrier_code": "usps",
+        "carrier_nickname": null,
+        "carrier_friendly_name": "USPS",
+        "validation_status": "invalid",
+        "warning_messages": [],
+        "error_messages": [
+          "No customs items have been created for international order.",
+          "Customs contents type not set for international order.",
+          "Non-delivery option not set for international order."
+        ]
+      },
+      {
+        "rate_id": "se-20997419",
+        "rate_type": "shipment",
+        "carrier_id": "se-836173",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 8.47
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "requested_comparison_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "rate_details": [
+          {
+            "rate_detail_type": "shipping",
+            "carrier_description": "shipping",
+            "carrier_billing_code": null,
+            "carrier_memo": null,
+            "amount": {
+              "currency": "usd",
+              "amount": 8.47
+            },
+            "billing_source": "Carrier"
+          }
+        ],
+        "zone": 0,
+        "package_type": "flat_rate_legal_envelope",
+        "delivery_days": 3,
+        "guaranteed_service": false,
+        "estimated_delivery_date": "2024-09-27T00:00:00Z",
+        "carrier_delivery_days": "1-3",
+        "ship_date": "2024-09-24T00:00:00Z",
+        "negotiated_rate": false,
+        "service_type": "USPS Priority Mail",
+        "service_code": "usps_priority_mail",
+        "trackable": true,
+        "carrier_code": "usps",
+        "carrier_nickname": null,
+        "carrier_friendly_name": "USPS",
+        "validation_status": "invalid",
+        "warning_messages": [],
+        "error_messages": [
+          "No customs items have been created for international order.",
+          "Customs contents type not set for international order.",
+          "Non-delivery option not set for international order."
+        ]
+      }
+    ],
+    "rate_request_id": "se-2843311",
+    "shipment_id": "se-15484586",
+    "created_at": "2024-09-24T09:30:59.4382334Z",
+    "status": "partial",
+    "errors": [
+      {
+        "error_source": "carrier",
+        "error_type": "business_rules",
+        "error_code": "unspecified",
+        "message": "A shipping carrier error occurred: Could not refresh authorization credentials in timely manner.",
+        "carrier_id": "se-836174",
+        "carrier_code": "ups",
+        "carrier_name": "UPS"
+      }
+    ]
+  },
+  "shipment_id": "se-15484586",
+  "carrier_id": null,
+  "service_code": null,
+  "external_shipment_id": null,
+  "shipment_number": null,
+  "ship_date": "2024-09-24T00:00:00Z",
+  "created_at": "2024-09-24T09:30:35.33Z",
+  "modified_at": "2024-09-24T09:30:35.313Z",
+  "shipment_status": "pending",
+  "ship_to": {
+    "geolocation": null,
+    "instructions": "",
+    "name": "Amanda Miller",
+    "phone": null,
+    "email": null,
+    "company_name": null,
+    "address_line1": "525 S Winchester Blvd",
+    "address_line2": null,
+    "address_line3": null,
+    "city_locality": "San Jose",
+    "state_province": "CA",
+    "postal_code": "95128",
+    "country_code": "US",
+    "address_residential_indicator": "unknown"
+  },
+  "ship_from": {
+    "instructions": null,
+    "name": "John Doe",
+    "phone": "512-555-5555",
+    "email": null,
+    "company_name": "Example Corp.",
+    "address_line1": "4009 Marathon Blvd",
+    "address_line2": null,
+    "address_line3": null,
+    "city_locality": "Arcadia",
+    "state_province": "NSW",
+    "postal_code": "2159",
+    "country_code": "AU",
+    "address_residential_indicator": "no"
+  },
+  "warehouse_id": null,
+  "return_to": {
+    "instructions": null,
+    "name": "John Doe",
+    "phone": "512-555-5555",
+    "email": null,
+    "company_name": "Example Corp.",
+    "address_line1": "4009 Marathon Blvd",
+    "address_line2": null,
+    "address_line3": null,
+    "city_locality": "Arcadia",
+    "state_province": "NSW",
+    "postal_code": "2159",
+    "country_code": "AU",
+    "address_residential_indicator": "no"
+  },
+  "is_return": false,
+  "confirmation": "none",
+  "customs": null,
+  "external_order_id": null,
+  "order_source_code": null,
+  "advanced_options": {
+    "bill_to_account": null,
+    "bill_to_country_code": null,
+    "bill_to_party": null,
+    "bill_to_postal_code": null,
+    "contains_alcohol": false,
+    "delivered_duty_paid": false,
+    "non_machinable": false,
+    "saturday_delivery": false,
+    "dry_ice": false,
+    "dry_ice_weight": null,
+    "fedex_freight": null,
+    "third_party_consignee": false,
+    "ancillary_endorsements_option": null,
+    "freight_class": null,
+    "custom_field1": null,
+    "custom_field2": null,
+    "custom_field3": null,
+    "collect_on_delivery": null,
+    "return_pickup_attempts": null,
+    "additional_handling": false,
+    "own_document_upload": false,
+    "limited_quantity": false,
+    "event_notification": false
+  },
+  "comparison_rate_type": null,
+  "retail_rate": null,
+  "shipping_rule_id": null,
+  "insurance_provider": "none",
+  "tags": [],
+  "packages": [
+    {
+      "shipment_package_id": "se-12392021",
+      "package_id": "se-3",
+      "package_code": "package",
+      "package_name": "Package",
+      "weight": {
+        "value": 17.0,
+        "unit": "pound"
+      },
+      "dimensions": {
+        "unit": "inch",
+        "length": 12.0,
+        "width": 12.0,
+        "height": 6.0
+      },
+      "insured_value": {
+        "currency": "usd",
+        "amount": 0.0
+      },
+      "label_messages": {
+        "reference1": null,
+        "reference2": null,
+        "reference3": null
+      },
+      "external_package_id": null,
+      "content_description": null,
+      "products": null
+    }
+  ],
+  "total_weight": {
+    "value": 17.0,
+    "unit": "pound"
+  },
+  "items": []
+}

@@ -50,31 +50,56 @@ function categorizeShippingMethod(rates) {
 }
 
 export const get_compared_rates = async (parameters, shipping_method) => {
-  const response = await axios.post(`${SHIPENGINE_API_URL}/rates`, parameters, {
-    headers: {
-      "API-Key": SHIPENGINE_API_KEY,
-      "Content-Type": "application/json",
-    },
-  });
-  const rates = response.data.rate_response.rates;
-  const format_rates = rates.map((rate) => {
+  try {
+    const response = await axios.post(
+      `${SHIPENGINE_API_URL}/rates`,
+      parameters,
+      {
+        headers: {
+          "API-Key": SHIPENGINE_API_KEY,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    if (response.data.rate_response.status === "error") {
+      return {
+        error: true,
+        data: response.data.rate_response.errors,
+      };
+    }
+
+    const rates = response.data.rate_response.rates;
+    const format_rates = rates.map((rate) => {
+      return {
+        carrier_id: rate.carrier_id,
+        service_code: rate.service_code,
+        package_type: rate.package_type,
+        shipping_rate: rate.shipping_amount.amount,
+        other_charges: rate.other_amount.amount,
+        delivery_days: rate.delivery_days,
+        guaranteed_service: rate.guaranteed_service,
+        estimated_delivery_date: rate.estimated_delivery_date,
+      };
+    });
+    const categorizedRates = categorizeShippingMethod(format_rates);
+    const data = categorizedRates.filter(
+      (rate) =>
+        rate.shipping_method !== "Unknown" &&
+        rate.shipping_method === shipping_method
+    );
+
     return {
-      carrier_id: rate.carrier_id,
-      service_code: rate.service_code,
-      package_type: rate.package_type,
-      shipping_rate: rate.shipping_amount.amount,
-      other_charges: rate.other_amount.amount,
-      delivery_days: rate.delivery_days,
-      guaranteed_service: rate.guaranteed_service,
-      estimated_delivery_date: rate.estimated_delivery_date,
+      error: false,
+      data,
     };
-  });
-  const categorizedRates = categorizeShippingMethod(format_rates);
-  return categorizedRates.filter(
-    (rate) =>
-      rate.shipping_method !== "Unknown" &&
-      rate.shipping_method === shipping_method
-  );
+  } catch (error) {
+    console.error(error);
+    return {
+      error: true,
+      data: "Internal server error",
+    };
+  }
 };
 
 export const get_carrier_services_codes = async (carrier_id) => {
