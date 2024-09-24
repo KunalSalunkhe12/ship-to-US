@@ -181,7 +181,6 @@ export const get_compared_rates_details_ai = async ({ rates, shipment }) => {
       },
     },
   });
-  console.log(completion);
 
   return JSON.parse(completion.choices[0].message.content);
 };

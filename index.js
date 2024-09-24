@@ -134,7 +134,6 @@ app.post("/rates", async (req, res) => {
     const rates = JSON.parse(jsonData);
 
     const optimal_rates = await get_top_rates_ai({
-      rates,
       shipment: {
         country_of_origin,
         product_description,
