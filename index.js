@@ -9,6 +9,7 @@ import {
   get_section32_insights_ai,
   get_top_rates_ai,
   get_ports_insights_ai,
+  get_compared_rates_details_ai,
 } from "./open_ai/index.js";
 
 // Create an instance of express
@@ -235,6 +236,25 @@ app.post("/ports-insights", async (req, res) => {
       shipping_value,
     });
 
+    res.json(response);
+  } catch (error) {
+    console.error("Error:", error);
+    res
+      .status(500)
+      .json({ error: "An error occurred while processing your request" });
+  }
+});
+
+app.post("/compare-rates", async (req, res) => {
+  try {
+    const { rates, shipment } = req.body;
+
+    // Validate input
+    if (!rates) {
+      return res.status(400).json({ error: "Missing required parameters" });
+    }
+
+    const response = await get_compared_rates_details_ai({ rates, shipment });
     res.json(response);
   } catch (error) {
     console.error("Error:", error);

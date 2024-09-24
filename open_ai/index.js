@@ -14,7 +14,7 @@ export const get_top_rates_ai = async ({ rates, shipment }) => {
       {
         role: "user",
         content: `
-    I need to estimate shipping rates from the origin country specified in the shipment details to the US. Please analyze the following information and provide estimates:
+    I need to estimate shipping rates in the year 2024 from the origin country specified in the shipment details to the US. Please analyze the following information and provide estimates:
 
     Shipment Details:
     ${JSON.stringify(shipment)}
@@ -22,13 +22,13 @@ export const get_top_rates_ai = async ({ rates, shipment }) => {
     Instructions:
     1. Use the 'country_of_origin' specified in the shipment details as the source country for shipping to the US.
     2. Estimate rates for the specified origin country to the US.
-    3. Consider factors such as distance,shipping_method, product weight, dimensions, description, us_destination and country_of_origin, economic differences, and trade relationships that might affect shipping rates between the origin country and the US.
+    3. Consider factors such as distance,shipping_method, product weight (kg), dimensions (lxwxh), description, us_destination and country_of_origin, economic differences, and trade relationships that might affect shipping rates between the origin country and the US.
 
     Output Required:
     1. Estimated shipping rates and details for:
-      [Origin Country] to US
+      [Origin Country] to US in the year 2024
     2. Include:
-      a. At least two estimated carrier services with rates
+      a. Three estimated rates with different shipping methods (e.g., Air, Sea, Express)
       b. Shipping method (e.g., Air, Sea, Express)
       c. Estimated delivery times based on shipping method
       d. Any additional charges or factors that could affect the final shipping cost
@@ -53,6 +53,7 @@ export const get_top_rates_ai = async ({ rates, shipment }) => {
                   shipping_rate: { type: "number" },
                   custom_fee: { type: "number" },
                   other_charges: { type: "number" },
+                  total_cost: { type: "number" },
                   delivery_days: { type: "number" },
                   shipping_method: { type: "string" },
                   reason: { type: "string" },
@@ -64,6 +65,7 @@ export const get_top_rates_ai = async ({ rates, shipment }) => {
                   "shipping_method",
                   "reason",
                   "custom_fee",
+                  "total_cost",
                 ],
                 additionalProperties: false,
               },
@@ -143,8 +145,45 @@ export const get_section32_insights_ai = async ({
   return JSON.parse(completion.choices[0].message.content);
 };
 
-export const get_compared_rates_details = (rates) => {
-  const prompt = `Analyze the following shipping rates and provide a detailed comparison`;
+export const get_compared_rates_details_ai = async ({ rates, shipment }) => {
+  const prompt = `Analyze the following shipping rates and provide a detailed comparison
+
+    Shipping Rates:
+    ${JSON.stringify(rates)}
+
+    Shipping Details:
+    ${JSON.stringify(shipment)}
+
+
+    Instructions:
+    1. Analyze the shipping rates to identify the most cost-effective option
+    2. Consider factors such as shipping_rate, other_charges, delivery_days
+    3. Provide a detailed comparison of the rates and recommendations for the best option
+`;
+
+  const completion = await openai.chat.completions.create({
+    model: "gpt-4o-mini",
+    messages: [{ role: "user", content: prompt }],
+    response_format: {
+      type: "json_schema",
+      json_schema: {
+        name: "compared_rates",
+        schema: {
+          type: "object",
+          properties: {
+            analysis: { type: "string" },
+            recommendations: { type: "array", items: { type: "string" } },
+          },
+          required: ["analysis", "recommendations"],
+          additionalProperties: false,
+        },
+        strict: true,
+      },
+    },
+  });
+  console.log(completion);
+
+  return JSON.parse(completion.choices[0].message.content);
 };
 
 export const get_ports_insights_ai = async (shipment) => {
